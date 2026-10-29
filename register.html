@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="kk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Тіркелу | Онлайн кітапхана</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<h1>Онлайн кітапхана</h1>
+
+		<nav>
+			<a href="index.html">Басты бет</a>
+			<a href="books.html">Кітаптар</a>
+			<a href="login.html">Кіру</a>
+			<a href="register.html">Тіркелу</a>
+		</nav>
+
+		<h2>Жаңа пайдаланушыны тіркеу</h2>
+
+		<form class="auth-form" id="registerForm">
+			<label for="name">Аты-жөніңіз:</label>
+			<input
+				type="text"
+				id="name"
+				name="name"
+				placeholder="Аты-жөніңізді енгізіңіз"
+				required
+			/>
+
+			<label for="email">Email:</label>
+			<input
+				type="email"
+				id="email"
+				name="email"
+				placeholder="Email енгізіңіз"
+				required
+			/>
+
+			<label for="password">Құпиясөз:</label>
+			<input
+				type="password"
+				id="password"
+				name="password"
+				placeholder="Құпиясөз енгізіңіз"
+				minlength="8"
+				required
+			/>
+
+			<button type="submit">Тіркелу</button>
+		</form>
+
+		<p>
+			Аккаунтыңыз бар ма?
+			<a href="login.html">Кіру</a>
+		</p>
+
+		<script>
+			document
+				.getElementById('registerForm')
+				.addEventListener('submit', function (event) {
+					event.preventDefault()
+					alert('Форма тексерілді! Бұл әзірге демо-нұсқа.')
+				})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,149 @@
+/* Сайттың жалпы дизайны */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f6fb;
+	color: #263238;
+	text-align: center;
+}
+
+/* Басты тақырып */
+h1 {
+	background-color: #3949ab;
+	color: white;
+	padding: 35px;
+	margin: 0;
+}
+
+/* Навигация мәзірі */
+nav {
+	background-color: #283593;
+	padding: 18px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	margin: 15px;
+	font-size: 17px;
+}
+
+nav a:hover {
+	color: #ffeb3b;
+}
+
+/* Негізгі мазмұн */
+h2 {
+	color: #3949ab;
+	margin-top: 45px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+/* Кітаптар орналасатын бөлім */
+.books {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding: 30px;
+}
+
+/* Кітап карточкасы */
+.book {
+	background-color: white;
+	width: 250px;
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+}
+
+/* Тінтуірді апарғандағы әсер */
+.book:hover {
+	transform: translateY(-8px);
+}
+
+.book h3 {
+	color: #3949ab;
+}
+
+/* Батырмалар */
+.book button {
+	background-color: #3949ab;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.book button:hover {
+	background-color: #1a237e;
+}
+
+/* Телефон экранына бейімдеу */
+@media (max-width: 600px) {
+	.books {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.book {
+		width: 80%;
+	}
+
+	nav a {
+		display: inline-block;
+		margin: 8px;
+	}
+}
+
+/* Тіркелу және кіру формасы */
+.auth-form {
+	background-color: white;
+	width: 350px;
+	max-width: 90%;
+	margin: 30px auto;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	text-align: left;
+}
+
+/* Өріс атаулары */
+.auth-form label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+/* Мәлімет енгізу өрістері */
+.auth-form input {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+/* Тіркелу батырмасы */
+.auth-form button {
+	width: 100%;
+	padding: 12px;
+	background-color: #3949ab;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.auth-form button:hover {
+	background-color: #283593;
+}
