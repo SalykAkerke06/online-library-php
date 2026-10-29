@@ -147,3 +147,17 @@ p {
 .auth-form button:hover {
 	background-color: #283593;
 }
+
+/* Сайттың төменгі бөлігі */
+footer {
+	background-color: #283593;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+footer p {
+	font-size: 14px;
+	margin: 5px;
+}
